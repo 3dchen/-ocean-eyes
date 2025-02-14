@@ -1,0 +1,86 @@
+/* 设置页面背景色 */
+body {
+    background-color: #FFFACD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 主要容器 */
+.container {
+    width: 1728px;
+    height: 1117px;
+    position: relative;
+}
+
+/* BURNING 组 - 确保三个 BURNING 的间隔一致 */
+.burning-group {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75%;
+}
+
+/* BURNING - 样式调整 */
+.burning {
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+    font-size: 96px;
+    font-family: 'Bangers', cursive;
+    color: #9F0505;
+}
+
+/* 文字容器 - 放置在 ocean eyes 左上角 */
+.text-container {
+    position: absolute;
+    bottom: 15%;
+    left: 3%;
+    text-align: left;
+}
+
+/* 灰色文本样式 */
+.gray-text {
+    color: #5C5A5A;
+    font-size: 96px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin: 5px 0;
+}
+
+/* "ocean eyes" 右下角 */
+.ocean-eyes {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    color: #074C8D;
+    font-size: 130px;
+    font-family: 'Are You Serious', cursive;
+    white-space: nowrap;
+}
+
+/* 灰色方块 */
+.rectangle {
+    width: 100px;
+    height: 80px;
+    background-color: #5C5A5A;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 让方块随机分布 */
+.rectangle:nth-child(4) { top: 20%; left: 20%; }
+.rectangle:nth-child(5) { top: 10%; left: 50%; }
+.rectangle:nth-child(6) { top: 35%; left: 70%; }
+.rectangle:nth-child(7) { top: 60%; left: 40%; }
+.rectangle:nth-child(8) { top: 75%; left: 10%; }
+
+/* 鼠标悬停时的动画效果 */
+.rectangle:hover {
+    transform: scale(1.1);
+}
