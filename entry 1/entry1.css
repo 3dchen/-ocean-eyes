@@ -18,7 +18,7 @@ body {
 /* 顶部文本（左上角）- 下移一些 */
 .top-text {
     position: absolute;
-    top: 12%; /* 适当下移，防止被遮挡 */
+    top: 13%; /* 适当下移，防止被遮挡 */
     left: 3%;
     color: #5C5A5A;
     font-size: 96px; /* 普通文本大小 */
