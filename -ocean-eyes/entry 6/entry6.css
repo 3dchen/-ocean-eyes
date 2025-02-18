@@ -1,0 +1,36 @@
+/* 设置页面背景色 */
+body {
+    background-color: #FFFACD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 主要容器 */
+.container {
+    text-align: center;
+}
+
+/* 灰色文本 */
+.gray-text {
+    color: #5C5A5A;
+    font-size: 96px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin-right: 10px;
+}
+
+/* "ocean eyes" 可点击样式 */
+.ocean-eyes {
+    color: #074C8D;
+    font-size: 130px;
+    font-family: 'Are You Serious', cursive;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* 悬停时颜色变化 */
+.ocean-eyes:hover {
+    color: #042F5B;
+}

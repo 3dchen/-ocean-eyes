@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry 14</title>
+    <link rel="stylesheet" href="entry14.css">
+    <!-- 加载 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Are+You+Serious&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <p class="text">
+            <span class="those">Those</span>
+            <span class="ocean-eyes" onclick="generateEyes()">ocean eyes</span>
+        </p>
+    </div>
+
+    <script>
+        function generateEyes() {
+            for (let i = 0; i < 15; i++) { // 生成 15 个 eye.png
+                let eye = document.createElement("img");
+                eye.src = "assets/eye.png";
+                eye.className = "eye-image";
+                eye.style.left = Math.random() * 90 + "vw";
+                eye.style.top = Math.random() * 90 + "vh";
+
+                // 点击 eye.png 跳转到 entry1.html
+                eye.onclick = function() {
+                    window.location.href = "/Users/sandy/Desktop/-ocean-eyes/entry 1/entry1.html";
+                };
+
+                document.body.appendChild(eye);
+            }
+        }
+    </script>
+</body>
+</html>

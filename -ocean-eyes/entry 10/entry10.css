@@ -1,0 +1,69 @@
+/* 设置背景颜色 */
+body {
+    background-color: #FFFACD; /* 淡黄色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 主要容器 */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* 歌词部分 */
+.lyrics {
+    font-size: 96px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: #5C5A5A;
+    text-align: center;
+    line-height: 1.2;
+    position: relative;
+}
+
+/* 让 "cry" 文字和图片包裹在一起 */
+.cry-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* cryeye2.png - 覆盖 "cry" */
+.cry-image {
+    max-width: 180px; /* 调整大小，让它更大 */
+    max-height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 让图片完全覆盖 "cry" */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* 鼠标悬停时稍微放大 */
+.cry-image:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* "cry" 文字（被图片覆盖） */
+.cry-text {
+    visibility: hidden; /* 让 "cry" 不显示，但仍然占位 */
+}
+
+/* "ocean eyes" - 右下角 */
+.ocean-eyes {
+    position: absolute;
+    bottom:-15%;
+    right: 3%;
+    font-size: 130px;
+    font-family: 'Are You Serious', cursive;
+    color: #074C8D;
+    white-space: nowrap;
+}

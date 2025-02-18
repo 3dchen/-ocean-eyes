@@ -1,0 +1,67 @@
+/* 设置页面背景色 */
+body {
+    background-color: #FFFACD; /* 淡黄色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 主要容器 */
+.container {
+    width: 1728px;
+    height: 1117px;
+    position: relative;
+}
+
+/* BURNING - 确保可见 */
+.burning {
+    position: absolute;
+    top: 13%; /* 确保完全可见 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 170px; /* 控制字母间距 */
+    font-size: 96px;
+    font-family: 'Bangers', cursive;
+    color: #9F0505;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out, font-family 0.3s ease-in-out;
+}
+
+/* 鼠标悬停时变为 Butcherman，自动调整字体大小以适应 */
+.burning:hover {
+    font-family: 'Butcherman', cursive;
+    font-size: 102px; /* 调整大小，确保仍然在一行 */
+}
+
+/* **灰色文本** - **现在在 ocean eyes 左上角** */
+.text-container {
+    position: absolute;
+    bottom: 17%;
+    left: 3%;
+    text-align: left;
+}
+
+/* 灰色文本样式 */
+.gray-text {
+    color: #5C5A5A;
+    font-size: 96px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin: 5px 0; /* 控制间距 */
+}
+
+/* **ocean eyes** 右下角 */
+.ocean-eyes {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    color: #074C8D;
+    font-size: 130px; /* 确保整行适配 */
+    font-family: 'Are You Serious', cursive;
+    white-space: nowrap;
+}
+

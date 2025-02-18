@@ -1,0 +1,24 @@
+/* 设置背景颜色 */
+body {
+    background-color: #FFFACD; /* 淡黄色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 居中但稍微向右移动的图片 */
+.centered-image {
+    max-width: 70%; /* 确保图片不会超出屏幕 */
+    max-height: 50vh; /* 适应屏幕高度 */
+    cursor: pointer; /* 鼠标悬停时显示可点击状态 */
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    left: 10%; /* 使图片向右移动一点点 */
+}
+
+/* 悬停时稍微放大 */
+.centered-image:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,70 @@
+/* 设置背景颜色 */
+body {
+    background-color: #FFFACD; /* 淡黄色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    position: relative;
+}
+
+/* 主要容器 */
+.container {
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+/* "I am scared" 初始样式 */
+.scared-text {
+    position: absolute;
+    font-size: 96px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: #5C5A5A;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 变成 Arbutus 字体 */
+.scared-text.transformed {
+    font-family: 'Arbutus', serif;
+    color: #9F0505;
+}
+
+/* 随机摆放 "I am scared" */
+.scared-text:nth-child(1) { top: 10%; left: 20%; }
+.scared-text:nth-child(2) { top: 15%; left: 65%; }
+.scared-text:nth-child(3) { top: 30%; left: 10%; }
+.scared-text:nth-child(4) { top: 35%; left: 50%; }
+.scared-text:nth-child(5) { top: 50%; left: 30%; }
+.scared-text:nth-child(6) { top: 50%; left: 70%; }
+
+/* 底部歌词部分（向下调整） */
+.bottom-section {
+    position: absolute;
+    bottom: -5%;
+    width: 100%;
+    text-align: left;
+    padding: 0 5%;
+}
+
+/* 歌词部分 */
+.lyrics {
+    font-size: 96px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: #5C5A5A;
+    line-height: 1.2;
+}
+
+/* "ocean eyes" 右下角（向下调整） */
+.ocean-eyes {
+    position: absolute;
+    bottom: -15%;
+    right: 3%;
+    font-size: 130px;
+    font-family: 'Are You Serious', cursive;
+    color: #074C8D;
+    white-space: nowrap;
+}

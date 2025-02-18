@@ -1,0 +1,80 @@
+/* 设置背景颜色 */
+body {
+    background-color: #FFFACD; /* 淡黄色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* 主要容器 */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+/* "I am scared" 可点击，并添加动画 */
+.scared-link {
+    text-decoration: none; /* 去掉下划线 */
+}
+
+.scared-text {
+    position: relative;
+    top: -15%;
+    font-size: 96px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: #5C5A5A;
+    text-align: center;
+    cursor: pointer;
+    animation: shake 1.5s infinite ease-in-out; /* 添加摇摆动画 */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* 鼠标悬停时稍微放大 */
+.scared-text:hover {
+    transform: scale(1.05);
+}
+
+/* 定义摇摆动画 */
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* 底部歌词部分 */
+.bottom-section {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: left;
+    padding: 0 5%;
+}
+
+/* 歌词部分 */
+.lyrics {
+    font-size: 96px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: #5C5A5A;
+    line-height: 1.2;
+}
+
+/* "ocean eyes" 右下角 */
+.ocean-eyes {
+    position: absolute;
+    bottom: -20%;
+    right: 3%;
+    font-size: 130px;
+    font-family: 'Are You Serious', cursive;
+    color: #074C8D;
+    white-space: nowrap;
+}

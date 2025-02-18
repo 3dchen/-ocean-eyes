@@ -1,0 +1,31 @@
+/* 设置背景颜色 */
+body {
+    background-color: #FFFACD; /* 淡黄色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 主要容器 */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* 居中 cryeye3.png */
+.centered-image {
+    max-width: 80%; /* 图片最大宽度 */
+    max-height: 80vh; /* 图片最大高度 */
+    cursor: pointer; /* 鼠标悬停时显示可点击 */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* 鼠标悬停时稍微放大 */
+.centered-image:hover {
+    transform: scale(1.05);
+}

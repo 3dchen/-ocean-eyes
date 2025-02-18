@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry 13</title>
+    <link rel="stylesheet" href="entry13.css">
+    <!-- 加载 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Are+You+Serious&family=Arbutus&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 初始 6 句 "I am scared" -->
+        <div class="scared-text" onclick="handleFirstClick()">I am scared</div>
+        <div class="scared-text" onclick="handleFirstClick()">I am scared</div>
+        <div class="scared-text" onclick="handleFirstClick()">I am scared</div>
+        <div class="scared-text" onclick="handleFirstClick()">I am scared</div>
+        <div class="scared-text" onclick="handleFirstClick()">I am scared</div>
+        <div class="scared-text" onclick="handleFirstClick()">I am scared</div>
+
+        <!-- 歌词部分 -->
+        <div class="bottom-section">
+            <p class="lyrics">
+                I've never fallen from quite this high<br>
+                Fallin' into your
+            </p>
+            <p class="ocean-eyes">ocean eyes</p>
+        </div>
+    </div>
+
+    <script>
+        let firstClick = false; // 是否是第一次点击
+
+        function handleFirstClick() {
+            if (!firstClick) {
+                // **第一次点击：所有 "I am scared" 变 Arbutus 字体 + 变红**
+                document.querySelectorAll('.scared-text').forEach(text => {
+                    text.style.fontFamily = "'Arbutus', serif";
+                    text.style.color = "#9F0505";
+                    text.onclick = handleSecondClick; // 绑定第二次点击事件
+                });
+                firstClick = true;
+            }
+        }
+
+        function handleSecondClick() {
+            // **第二次点击：随机生成更多 "scared"**
+            for (let i = 0; i < 3; i++) {
+                let newText = document.createElement("div");
+                newText.className = "scared-text transformed";
+                newText.innerText = "scared";
+                newText.onclick = function() { window.location.href = "/Users/sandy/Desktop/-ocean-eyes/entry 14/entry14.html"; }; // 最终跳转
+
+                // 随机摆放位置
+                newText.style.left = Math.random() * 80 + "%";
+                newText.style.top = Math.random() * 70 + "%";
+
+                document.body.appendChild(newText);
+            }
+        }
+    </script>
+</body>
+</html>
+

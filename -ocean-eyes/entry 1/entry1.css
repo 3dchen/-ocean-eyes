@@ -1,0 +1,68 @@
+/* 设置页面背景色 */
+body {
+    background-color: #FFFACD; /* 淡黄色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 主要容器，固定尺寸 */
+.container {
+    width: 1728px;
+    height: 1117px;
+    position: relative;
+}
+
+/* 顶部文本（左上角）- 下移一些 */
+.top-text {
+    position: absolute;
+    top: 13%; /* 适当下移，防止被遮挡 */
+    left: 3%;
+    color: #5C5A5A;
+    font-size: 96px; /* 普通文本大小 */
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin: 0;
+}
+
+/* 底部文本（左下角） */
+.bottom-text {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    color: #5C5A5A;
+    font-size: 96px; /* 普通文本大小 */
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin: 0;
+    white-space: nowrap; /* 防止换行 */
+}
+
+/* "ocean eyes" 样式 - 调小字号 */
+.ocean-eyes {
+    color: #074C8D;
+    font-size: 150px; /* 缩小字体以适应一行 */
+    font-family: 'Are You Serious', cursive;
+}
+
+/* "you" 文字带有动画，字体大小为 128px */
+.you {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 128px; /* "you" 的字体大小 */
+    animation: shake 1.5s ease-in-out infinite alternate;
+}
+
+/* 鼠标悬停时微动 */
+.you:hover {
+    animation: shake 0.3s ease-in-out;
+}
+
+/* 左右摇摆动画 */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    50% { transform: translateX(8px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}

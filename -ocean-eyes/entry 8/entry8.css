@@ -1,0 +1,28 @@
+/* 设置背景颜色 */
+body {
+    background-color: #FFFACD; /* 淡黄色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 让图片显示且可点击 */
+.centered-image {
+    display: block;
+    max-width: 120%; /* 让图片更大 */
+    max-height: 75vh; /* 适当增加高度 */
+    cursor: pointer; /* 鼠标悬停时显示可点击状态 */
+    transition: transform 0.2s ease-in-out;
+    
+    /* 让图片稍微向右和向下移动 */
+    position: relative;
+    left: 10%;  /* 向右移动 */
+    top: 10%;  /* 向下移动 */
+}
+
+/* 悬停时稍微放大 */
+.centered-image:hover {
+    transform: scale(1.1); /* 增加放大效果，让交互更明显 */
+}

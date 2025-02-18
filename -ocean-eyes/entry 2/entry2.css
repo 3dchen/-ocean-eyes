@@ -1,0 +1,71 @@
+/* 设置页面背景色 */
+body {
+    background-color: #FFFACD; /* 淡黄色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 主要容器，固定尺寸 */
+.container {
+    width: 1728px;
+    height: 1117px;
+    position: relative;
+    text-align: center;
+}
+
+/* 顶部文本（左上角） */
+.top-text {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    color: #5C5A5A;
+    font-size: 96px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin: 0;
+    text-align: left;
+}
+
+/* 居中的 "you" */
+.center-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* "you" 文字，带有鼠标悬停放大效果 */
+.you {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 250px; /* 初始大小 */
+    color: #5C5A5A;
+    font-family: 'Annie Use Your Telescope', cursive;
+    transition: font-size 0.3s ease-in-out; /* 平滑过渡 */
+}
+
+/* 悬停时放大 */
+.you:hover {
+    font-size: 300px; /* 鼠标放上去时变大 */
+}
+
+/* 底部文本（左下角） */
+.bottom-text {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    color: #5C5A5A;
+    font-size: 96px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* "ocean eyes" 样式，缩小字体使其保持在一行 */
+.ocean-eyes {
+    color: #074C8D;
+    font-size: 130px; /* 缩小字体以适应一行 */
+    font-family: 'Are You Serious', cursive;
+}
